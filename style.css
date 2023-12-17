@@ -1,0 +1,40 @@
+*, *::before, *::after {         
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.container {
+    width: 300px;
+    max-width: 50%;
+    background-color: rgb(62, 62, 62);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: black;
+    padding: 5px 10px;
+    outline: none;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
